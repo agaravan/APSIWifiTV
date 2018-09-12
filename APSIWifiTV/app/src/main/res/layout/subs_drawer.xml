@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:background="@color/subs_drawer_background">
+
+	<TextView
+		android:id="@+id/subs_drawer_title"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:gravity="center_vertical"
+		android:padding="10dp"
+		android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+		android:text="@string/subscriptions"
+		android:background="@color/colorPrimary"
+		style="@style/SubsTextView"/>
+
+    <TextView
+        android:id="@+id/subs_drawer_title_1"
+        style="@style/SubsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="58dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="@string/categories"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:layout_alignParentLeft="true" />
+
+	<TextView
+		android:id="@+id/subs_drawer_title_2"
+		style="@style/SubsTextView"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="116dp"
+		android:background="@color/colorPrimary"
+		android:gravity="center_vertical"
+		android:padding="10dp"
+		android:text="@string/feedback"
+		android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+		android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/subs_drawer_title_3"
+        style="@style/SubsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="174dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="@string/contact_us"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+        android:layout_alignParentLeft="true" />
+
+	<TextView
+		android:id="@+id/subs_drawer_title_4"
+		style="@style/SubsTextView"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="232dp"
+		android:background="@color/colorPrimary"
+		android:gravity="center_vertical"
+		android:padding="10dp"
+		android:text="@string/exit"
+		android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+		android:layout_alignParentLeft="true" />
+
+
+	<android.support.v7.widget.RecyclerView
+        android:id="@+id/subs_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:layout_alignParentLeft="true" />
+
+	<ProgressBar
+		android:id="@+id/subs_drawer_progress_bar"
+		android:layout_centerInParent="true"
+		android:visibility="invisible"
+		style="@style/LoadingProgressBar"/>
+
+</RelativeLayout>
